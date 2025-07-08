@@ -25,30 +25,15 @@ A complete end-to-end **Invoice Generator** web application built with **Spring 
 * ✅ RESTful API (Spring Boot)
 * ✅ Persistent Data with MongoDB
 * ✅ Cross-Origin Support
-* ✅ Responsive UI (ReactJS + Tailwind/Bootstrap)
+* ✅ Responsive UI (ReactJS + Bootstrap)
+* ✅ Email of Invoice
 
 ---
 
 ## 📁 Folder Structure
 
 ```
-invoice-generator/
-├── backend/              # Spring Boot Application
-│   └── src/main/java/
-│       └── com/invoice/
-│           ├── controller/
-│           ├── service/
-│           ├── model/
-│           └── repository/
-├── frontend/             # React Application
-│   ├── src/
-│   │   ├── components/
-│   │   ├── pages/
-│   │   ├── services/
-│   │   └── clerk/        # Clerk integration
-│   └── .env              # Clerk Frontend API Key
-└── mongo/                # MongoDB setup
-```
+
 
 ---
 
@@ -83,17 +68,6 @@ VITE_CLERK_PUBLISHABLE_KEY=your_clerk_publishable_key
 * Copy your **Frontend API Key** and **Instance ID**.
 * Integrate `@clerk/clerk-react` and wrap your app with `ClerkProvider`.
 
----
-
-## 📆 Sample API Endpoints
-
-| Method | Endpoint             | Description        |
-| ------ | -------------------- | ------------------ |
-| GET    | `/api/invoices`      | Get all invoices   |
-| POST   | `/api/invoices`      | Create new invoice |
-| GET    | `/api/invoices/{id}` | Get invoice by ID  |
-| PUT    | `/api/invoices/{id}` | Update invoice     |
-| DELETE | `/api/invoices/{id}` | Delete invoice     |
 
 ---
 
