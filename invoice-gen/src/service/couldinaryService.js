@@ -7,7 +7,7 @@ export const uploadPDF = async (pdfBlob) => {
   formData.append('resource_type', 'raw'); // Required for PDF and other non-image formats
 
   const res = await axios.post(
-    'https://api.cloudinary.com/v1_1/dr8uyaksf/raw/upload',
+    'https://api.cloudinary.com/***********',
     formData
   );
 
